@@ -6,10 +6,10 @@ export function Signup(handleSubmit, email, handleEmailChange, password, handleP
             <h2>Let's Contribute</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                <TextField className={styles.input} label="Email" variant="standard" type='password' value={email} onChange={handleEmailChange}/>
+                <TextField className={styles.input} label="Email" variant="standard" value={email} onChange={handleEmailChange}/>
                 </div>
                 <div>
-                    <TextField className={styles.input} label="Business Name" variant="standard" type='password' value={email} onChange={handleEmailChange}/>
+                    <TextField className={styles.input} label="Business Name" variant="standard" type='password'/>
                 </div>
                 <div>
                     <label>Which Setor would you like to donate to</label>
@@ -26,10 +26,10 @@ export function Signup(handleSubmit, email, handleEmailChange, password, handleP
                     <TextField className={styles.input} label="Set Password" variant="standard" type='password' value={password} onChange={handlePasswordChange} />
                 </div>
                 <div>
-                    <TextField className={styles.input} label="Confirm Password" variant="standard" type='password' value={password} onChange={handlePasswordChange} />
+                    <TextField className={styles.input} label="Confirm Password" variant="standard" type='password' />
                     
                 </div>
-                <button type="submit" className={styles.submitButton}>Sign In</button>
+                <button type="submit" className={styles.submitButton}>Sign Up</button>
             </form>
         </div>
     )
@@ -42,7 +42,7 @@ export function Signin(handleSubmit, email, handleEmailChange, password, handleP
             <form onSubmit={handleSubmit} className={styles.signInForm}>
                 <div className={styles.email}>
                     {/* <label>Email:</label> */}
-                    <TextField className={styles.input} label="Email" variant="standard" type='password' value={email} onChange={handleEmailChange}/>
+                    <TextField className={styles.input} label="Email" variant="standard" value={email} onChange={handleEmailChange}/>
                 </div>
                 <div className={styles.password}>
                     {/* <label>Password:</label> */}
