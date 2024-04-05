@@ -1,4 +1,5 @@
 import styles from './Home.module.css'
+import MNCcard from '../../components/MNCcard/MNCcard'
 export default function Home() {
     return (
         <>
@@ -32,6 +33,12 @@ export default function Home() {
                     <div className={styles.bullet}><span>154</span><br />Successful CSR projects</div>
                     <div className={styles.bullet}><span>86</span><br />Upcoming projects</div>
                 </div>
+            </div>
+            <div>
+                {MNCcard()}
+                {MNCcard()}
+                {MNCcard()}
+                {MNCcard()}
             </div>
         </>
     )
