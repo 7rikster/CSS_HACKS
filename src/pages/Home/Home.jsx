@@ -17,7 +17,13 @@ export default function Home() {
             </div>
             <div className={styles.finalHeadline}>
                 Join us and contribute  to the betterment of the society
+                <div className={styles.joinUs}>
+                    <a href="#">Join as a Corporate</a><a href="#">Join as an NGO</a><a href="#">Contribute as an individual</a>
+                </div>
             </div>
+            {/* <div className={styles.joinUs}>
+                <a href="#">Join as a Corporate</a><a href="#">Join as an NGO</a><a href="#">Contribute as an individual</a>
+            </div> */}
             <div className={styles.bulletinBoard}>
                 <div className={styles.bulletinImage}></div>
                 <div className={styles.bulletins}>
